@@ -35,7 +35,7 @@ class MyApp extends App {
         <LayoutContainer>
           {(router.asPath !== '/') && (
             <Navbar color="light" light expand="md">
-            <NavbarBrand href="/">HelloWorld</NavbarBrand>
+            <NavbarBrand href="/register-burn">JongBurn</NavbarBrand>
             <Nav className="ml-auto" navbar>
             <NavItem>
                 <Link href="/register-burn">สมัคร</Link>
