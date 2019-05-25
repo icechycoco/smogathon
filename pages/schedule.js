@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Input, Row, Col } from 'reactstrap'
+import { Input, Row, Col, Form, Button, Label, Container } from 'reactstrap'
 import dynamic from 'next/dynamic'
 
 const DynamicComponentWithNoSSR = dynamic(
@@ -52,14 +52,23 @@ export default class schedule extends Component {
 
   render() {
     return (
-      <div>
-        <h1>ตารางการเผา</h1>
-        <Row>
-          <Col sm="1">หมู่บ้าน</Col>
-          <Col>
-            <Input />
-          </Col>
-        </Row>
+      <Container>
+        <Col>
+          <Row style={{ justifyContent:'center', alignItems:'center', padding:20}}>
+            <h1 >
+              ตารางการเผา
+            </h1>
+          </Row>
+        </Col>
+        <Col>
+        <Form style={{paddingBottom:20, paddingTop:20}}>
+            <Label for="exampleSelect">ชื่อหมู่บ้าน</Label>
+            <Input type="select" placeholder="พ่อหลวง">
+              <option>แม่โถ</option>
+              <option>แม่ลาหลวง</option>
+              <option>แม่สะเรียง</option>
+            </Input>
+        </Form>
         <DynamicComponentWithNoSSR
           id = "your-custom-ID"
           header = {{
@@ -73,7 +82,13 @@ export default class schedule extends Component {
           eventLimit= {true} // allow "more" link when too many events
           events = {this.state.events}	
       />
-      </div>
+      </Col>
+      <Col>
+        <Row style={{justifyContent:'flex-end', padding:20}}>
+          <Button color="primary">ดาวน์โหลด</Button>{' '}
+        </Row>
+      </Col>
+      </Container>
     )
   }
 }

@@ -39,17 +39,17 @@ class MyApp extends App {
             <Navbar color="light" light expand="md">
             <NavbarBrand href="/register-burn">JongBurn</NavbarBrand>
             <Nav className="ml-auto" navbar>
-            <NavItem>
-                <Link href="/register-burn">สมัคร</Link>
+            <NavItem style={{marginRight:20}}>
+                <Link href="/register-burn">จอง</Link>
               </NavItem>
-            <NavItem>
-                <Link href="/schedule">จองวันทำการ</Link>
+            <NavItem style={{marginRight:20}}>
+                <Link href="/schedule">ตารางเผา</Link>
               </NavItem>
-              <NavItem>
-                <Link href="/metrics">วัดผล</Link>
-              </NavItem>
-              <NavItem>
-                <Link href="/detail">ตาราง</Link>
+            <NavItem style={{marginRight:20}}>
+                <Link href="/detail">รายชื่อการเผา</Link>
+            </NavItem>
+            <NavItem style={{marginRight:20}}>
+                <Link href="/metrics">ติดตามผล</Link>
               </NavItem>
             </Nav>
           </Navbar>
