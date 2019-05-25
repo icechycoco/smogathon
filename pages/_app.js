@@ -1,5 +1,6 @@
 import React from 'react'
 import App, { Container } from 'next/app'
+import { Container as LayoutContainer } from 'reactstrap'
 import 'bootstrap/dist/css/bootstrap.css'
 
 class MyApp extends App {
@@ -18,7 +19,9 @@ class MyApp extends App {
 
     return (
       <Container>
-        <Component {...pageProps} />
+        <LayoutContainer>
+          <Component {...pageProps} />
+        </LayoutContainer>
       </Container>
     )
   }
