@@ -15,6 +15,15 @@ export default class login extends Component {
   render() {
     return (
       <Container>
+        <center>
+          <img 
+            src="/static/img/logo.png"
+            style={{
+              marginTop: 40,
+              width: 300,
+            }}
+          />
+        </center>
         <Col>
           <Row style={{ justifyContent:'center', alignItems:'center', padding:20}}>
             <h1 >

@@ -8,7 +8,14 @@ import Link from 'next/link'
 
 const CustomNavBar = () => (
   <Navbar color="light" light expand="md">
-    <NavbarBrand href="/register-burn">JongBurn</NavbarBrand>
+    <NavbarBrand href="/register-burn">
+      <img 
+        src="/static/img/logo.png"
+        style={{
+          width: 50
+        }}
+      />&nbsp;&nbsp;JongBurn
+    </NavbarBrand>
     <Nav className="ml-auto" navbar>
       <NavItem style={{marginRight:20}}>
           <Link href="/register-burn">จอง</Link>
