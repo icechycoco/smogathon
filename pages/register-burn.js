@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Card, CardHeader, Container, Row, Col, Table, Button } from 'reactstrap'
+import { Button, Form, FormGroup, Label,Input} from 'reactstrap'
 
 
 
@@ -8,40 +8,38 @@ export default class registerburn extends Component {
         return (
             <div>
             <h1><center> ลงทะเบียนการเผา </center></h1>
-            <label>
-            <p>
-                ชื่อ :
-                <input type="text" name="name" />
-            </p>
-            <p>
-                ชื่อหมู่บ้าน :
-                <input type="text" name="nameVillage" />
-            </p>
-            <p>
-                ชื่อพ่อหลวง :
-                <input type="text" name="nameRoyalFather" />
-            </p>
-            <p>
-                วันที่เผา :
-                <input type="text" name="dateBurn" />
-            </p>
-            <p>
-                ปลูกอะไรก่อน :
-                <input type="text" name="whatPlantBefore" />
-            </p>
-            <p>
-                ปลูกอะไรหลัง :
-                <input type="text" name="whatPlantAfter" />
-            </p>
-            <p>
-                ขนาดพื้นที่ :
-                <input type="text" name="area" />
-            </p>
-            <p>
-                หมายเหตุ :
-                <input type="text" name="other" />
-            </p>
-             </label>  
+            <FormGroup>
+          <Label for="ืname">ชื่อ</Label>
+          <Input type="text" name="name" id="name"  />
+             </FormGroup>
+             <FormGroup>
+          <Label for="nameVillage">ชื่อหมู่บ้าน</Label>
+          <Input type="text" name="nameVillage" id="ืnameVillage"  />
+             </FormGroup>
+             <FormGroup>
+          <Label for="nameRoyalFather">ชื่อพ่อหลวง</Label>
+          <Input type="text" name="nameRoyalFather" id="nameRoyalFather"  />
+             </FormGroup>
+             <FormGroup>
+          <Label for="dateBurn">วันที่เผา</Label>
+          <Input type="text" name="dateBurn" id="dateBurn"  />
+             </FormGroup>
+             <FormGroup>
+          <Label for="whatPlantBefore">ปลูกอะไรก่อน</Label>
+          <Input type="text" name="whatPlantBefore" id="whatPlantBefore"  />
+             </FormGroup>
+             <FormGroup>
+          <Label for="whatPlantAfter">ปลูกอะไรหลัง</Label>
+          <Input type="text" name="whatPlantAfter" id="whatPlantAfter"  />
+             </FormGroup>
+             <FormGroup>
+          <Label for="area">ขนาดพื้นที่</Label>
+          <Input type="text" name="area" id="area"  />
+             </FormGroup>
+             <FormGroup>
+          <Label for="other">หมายเหตุ</Label>
+          <Input type="text" name="other" id="other"  />
+             </FormGroup>
             <p><Button color="primary">ส่ง</Button>{' '}</p>
           </div>
         )
