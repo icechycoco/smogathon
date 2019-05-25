@@ -8,14 +8,22 @@ import {
   NavbarBrand,
 } from 'reactstrap'
 import Link from 'next/link'
+import { withRouter } from 'next/router'
 import 'bootstrap/dist/css/bootstrap.css'
+import 'thinknetmaps/dist/thinknetmaps.css'
+import 'fullcalendar-reactwrapper/dist/css/fullcalendar.min.css'
 
 class MyApp extends App {
-  static async getInitialProps({ Component, ctx }) {
+  static async getInitialProps({ Component, ctx, router }) {
     let pageProps = {}
 
     if (Component.getInitialProps) {
       pageProps = await Component.getInitialProps(ctx)
+    }
+
+    pageProps = {
+      ...pageProps,
+      router
     }
 
     return { pageProps }
@@ -23,12 +31,13 @@ class MyApp extends App {
 
   render() {
     const { Component, pageProps } = this.props
-
+    const { router } = pageProps
     return (
       <Container>
         <LayoutContainer>
-          <Navbar color="light" light expand="md">
-            <NavbarBrand href="/">HelloWorld</NavbarBrand>
+          {(router.asPath !== '/') && (
+            <Navbar color="light" light expand="md">
+            <NavbarBrand href="/register-burn">JongBurn</NavbarBrand>
             <Nav className="ml-auto" navbar>
             <NavItem>
                 <Link href="/register-burn">สมัคร</Link>
@@ -44,6 +53,7 @@ class MyApp extends App {
               </NavItem>
             </Nav>
           </Navbar>
+          )}
           <Component {...pageProps} />
         </LayoutContainer>
       </Container>
@@ -51,4 +61,4 @@ class MyApp extends App {
   }
 }
 
-export default MyApp
+export default withRouter(MyApp)

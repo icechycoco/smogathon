@@ -1,5 +1,14 @@
 import React, { Component } from 'react'
-import { Card, CardHeader, Container, Row, Col, Table, Button, Form, Input, FormGroup,FormText,Label } from 'reactstrap'
+import { 
+  Container, 
+  Row, 
+  Col, 
+  Button, 
+  Input, 
+  FormGroup, 
+  Label 
+} from 'reactstrap'
+import Link from 'next/link'
 
 
 export default class login extends Component {
@@ -39,7 +48,9 @@ export default class login extends Component {
         </Col>
         <Col>
           <Row style={{justifyContent:'center', padding:20}}>
-            <Button color="primary">เข้าสู่ระบบ</Button>{' '}
+            <Link href="/register-burn">
+              <Button color="primary">เข้าสู่ระบบ</Button>
+            </Link>
           </Row>
         </Col>
       </Container>

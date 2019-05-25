@@ -19,6 +19,6 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "reactstrap": "^8.0.0",
-    "thinknetmaps": "^1.1.0-rc2"
+    "thinknetmaps": "^1.1.0"
   }
 }
