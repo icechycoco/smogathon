@@ -39,6 +39,9 @@ class MyApp extends App {
               <NavItem>
                 <Link href="/metrics">วัดผล</Link>
               </NavItem>
+              <NavItem>
+                <Link href="/detail">ตาราง</Link>
+              </NavItem>
             </Nav>
           </Navbar>
           <Component {...pageProps} />
