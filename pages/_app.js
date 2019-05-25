@@ -10,6 +10,7 @@ import {
 import Link from 'next/link'
 import { withRouter } from 'next/router'
 import 'bootstrap/dist/css/bootstrap.css'
+import 'fullcalendar-reactwrapper/dist/css/fullcalendar.min.css'
 
 class MyApp extends App {
   static async getInitialProps({ Component, ctx, router }) {
