@@ -1,6 +1,13 @@
 import React from 'react'
 import App, { Container } from 'next/app'
-import { Container as LayoutContainer } from 'reactstrap'
+import { 
+  Container as LayoutContainer,
+  Nav,
+  Navbar,
+  NavItem,
+  NavbarBrand,
+} from 'reactstrap'
+import Link from 'next/link'
 import 'bootstrap/dist/css/bootstrap.css'
 
 class MyApp extends App {
@@ -20,6 +27,17 @@ class MyApp extends App {
     return (
       <Container>
         <LayoutContainer>
+          <Navbar color="light" light expand="md">
+            <NavbarBrand href="/">HelloWorld</NavbarBrand>
+            <Nav className="ml-auto" navbar>
+            <NavItem>
+                <Link href="/schedule">จองวันทำการ</Link>
+              </NavItem>
+              <NavItem>
+                <Link href="/metrics">วัดผล</Link>
+              </NavItem>
+            </Nav>
+          </Navbar>
           <Component {...pageProps} />
         </LayoutContainer>
       </Container>
