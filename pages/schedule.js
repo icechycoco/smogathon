@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Input } from 'reactstrap'
+import { Input, Row, Col } from 'reactstrap'
 import Calendar from 'rc-calendar'
 
 export default class schedule extends Component {
@@ -7,9 +7,12 @@ export default class schedule extends Component {
     return (
       <div>
         <h1>ตารางการเผา</h1>
-        <div>
-          หมู่บ้าน <Input />
-        </div>
+        <Row>
+          <Col sm="1">หมู่บ้าน</Col>
+          <Col>
+            <Input />
+          </Col>
+        </Row>
       </div>
     )
   }
