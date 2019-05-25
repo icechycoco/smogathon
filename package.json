@@ -14,8 +14,8 @@
   "dependencies": {
     "@zeit/next-css": "^1.0.1",
     "bootstrap": "^4.3.1",
+    "fullcalendar-reactwrapper": "^1.0.7",
     "next": "^8.1.0",
-    "rc-calendar": "^9.13.4",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "reactstrap": "^8.0.0",
