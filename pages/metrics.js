@@ -4,7 +4,7 @@ import { Row, Col } from 'reactstrap'
 export default class metrics extends Component {
   componentDidMount() {
     const thinknetmaps = require('thinknetmaps')
-    new thinknetmaps.Map({
+    const firstMap = new thinknetmaps.Map({
       container: 'map', // id ของ div ที่จะให้ map ไป render
       app_id: 'test-tncnx-7iqgm',
       api_key: 'YTA2N2YyZjQ0YzlkOTNlOTVhYTFhNGRiNzU3NTIyZTI',
@@ -14,7 +14,8 @@ export default class metrics extends Component {
         lat: 13.72 
       }
     })
-    new thinknetmaps.Map({
+    
+    const secondMaps = new thinknetmaps.Map({
       container: 'map2', // id ของ div ที่จะให้ map ไป render
       app_id: 'test-tncnx-7iqgm',
       api_key: 'YTA2N2YyZjQ0YzlkOTNlOTVhYTFhNGRiNzU3NTIyZTI',
