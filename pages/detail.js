@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Card, CardHeader, Container, Row, Col, Table } from 'reactstrap'
+import { Card, CardHeader, Container, Row, Col, Table, Button } from 'reactstrap'
 
 
 export default class detail extends Component {
@@ -41,6 +41,7 @@ export default class detail extends Component {
           </tr>
         </tbody>
       </Table>
+      <Button color="primary">ดาวน์โหลด</Button>{' '}
       </Container>
     )
   }
