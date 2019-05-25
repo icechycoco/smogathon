@@ -15,9 +15,12 @@ export default class detail extends Component {
         <thead>
           <tr>
             <th>#</th>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Username</th>
+            <th>ชื่อ</th>
+            <th>พ่อหลวง</th>
+            <th>อบท</th>
+            <th>วันที่ได้เผา</th>
+            <th>พืชที่ปลูกก่อนการเผา</th>
+            <th>พืชที่จะปลูกหลังการเผา</th>
           </tr>
         </thead>
         <tbody>
