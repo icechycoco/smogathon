@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import { Button } from 'reactstrap';
+import { Card, CardHeader, Container, Row, Col, Table, Button } from 'reactstrap'
+
 
 
 export default class registerburn extends Component {

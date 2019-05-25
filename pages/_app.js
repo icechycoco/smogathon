@@ -31,6 +31,9 @@ class MyApp extends App {
             <NavbarBrand href="/">HelloWorld</NavbarBrand>
             <Nav className="ml-auto" navbar>
             <NavItem>
+                <Link href="/register-burn">สมัคร</Link>
+              </NavItem>
+            <NavItem>
                 <Link href="/schedule">จองวันทำการ</Link>
               </NavItem>
               <NavItem>
