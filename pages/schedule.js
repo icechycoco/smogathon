@@ -6,7 +6,7 @@ export default class schedule extends Component {
     return (
       <div>
         <h1>ตารางการเผา</h1>
-        <Button>Test</Button>
+        <Button>Test2</Button>
         <div>
         </div>
       </div>
