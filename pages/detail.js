@@ -26,68 +26,71 @@ export default class detail extends Component {
           <Table bordered hover style={{padding:20}}>
           <thead>
             <tr>
-              <th>#</th>
+              {/* <th>#</th> */}
               <th>ชื่อ</th>
+              <th>ตำบล</th>
               <th>พ่อหลวง</th>
-              <th>อบท</th>
+              <th>ตำแหน่ง</th>
               <th>วันที่ได้เผา</th>
-              <th>พืชที่ปลูกก่อนการเผา</th>
-              <th>พืชที่จะปลูกหลังการเผา</th>
+              <th>ขนาดพื้นที่</th>
+              <th>พืชก่อนการเผา</th>
+              <th>พืชหลังการเผา</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <th scope="row">1</th>
-              <td>Mark</td>
-              <td>สมพงศ์</td>
-              <td>ปรเมท</td>
+              {/* <th scope="row">1</th> */}
+              <td>ศรีดอยชัยหมู่ 2</td>
+              <td>ศรีดอยชัย</td>
+              <td>นางคำเอื้อย</td>
+              <td>ข้างเทศบาลศรีดอยชัย</td>
               <td>02-05-19</td>
+              <td>2 ไร่</td>
               <td>ข้าวโพด</td>
               <td>ข้าว</td>
             </tr>
             <tr>
-              <th scope="row">2</th>
-              <td>Jacob</td>
-              <td>สมคิด</td>
-              <td>ปรเมท</td>
-              <td>05-05-19</td>
-              <td>ข้าวโพด</td>
-              <td>ข้าว</td>           
-            </tr>
-            <tr>
-              <th scope="row">3</th>
-              <td>Larry</td>
-              <td>สมพงศ์</td>
-              <td>ปรเมท</td>
-              <td>01-05-19</td>
-              <td>ข้าวโพด</td>
+              {/* <th scope="row">2</th> */}
+              <td>โป่งน้อย</td>
+              <td>ครึ่ง</td>
+              <td>นายจั๋นตา</td>
+              <td>ข้างโป่งน้อย</td>
+              <td>02-05-19</td>
+              <td>2 ไร่</td>
+              <td>วัชพืช</td>
               <td>ข้าว</td>
             </tr>
             <tr>
-              <th scope="row">4</th>
-              <td>Mark</td>
-              <td>สมชาย</td>
-              <td>ปรเมท</td>
-              <td>09-05-19</td>
-              <td>ข้าวโพด</td>
+              {/* <th scope="row">3</th> */}
+              <td>แปลงข้างสถานปฏิบัติธรรม</td>
+              <td>สถาน</td>
+              <td>จันทร์ตา</td>
+              <td>หนองคาย</td>
+              <td>02-05-19</td>
+              <td>2 ไร่</td>
+              <td>วัชพืช</td>
               <td>ข้าว</td>
             </tr>
             <tr>
-              <th scope="row">5</th>
-              <td>Jacob</td>
-              <td>สมพงศ์</td>
-              <td>ปรเมท</td>
-              <td>10-05-19</td>
-              <td>ข้าวโพด</td>
-              <td>ข้าว</td>           
+              {/* <th scope="row">4</th> */}
+              <td>บ้านสันทราย</td>
+              <td>ริมโขง</td>
+              <td>ลุงสิงห์คำ</td>
+              <td>ข้างร้านสวนสน</td>
+              <td>02-05-19</td>
+              <td>5 ไร่</td>
+              <td>ข้าว</td>
+              <td>ข้าว</td>
             </tr>
             <tr>
-              <th scope="row">6</th>
-              <td>Larry</td>
-              <td>สมรวย</td>
-              <td>ปรเมท</td>
-              <td>15-05-19</td>
-              <td>ข้าวโพด</td>
+              {/* <th scope="row">5</th> */}
+              <td>บ้านใหม่ หมู่ 3</td>
+              <td>เวียงเชียงของ</td>
+              <td>นายติ๋บ</td>
+              <td>ริมน้ำโขง</td>
+              <td>02-05-19</td>
+              <td>8 ไร่</td>
+              <td>วัชพืช</td>
               <td>ข้าว</td>
             </tr>
           </tbody>
